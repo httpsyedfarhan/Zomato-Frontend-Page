@@ -37,17 +37,146 @@ so that we have all the ui to use */
     border-radius: 100px;
     border:dotted 1px white;
 }
+.hero__section_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    height: 80px;
+    width: auto;
+}
+.hero__section_headline{
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+    padding-top: 1px;
+}
+.hero__section_input_container{
+    background-color: white;
+    width: 565px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    padding: 10px 10px 5px 0px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+.hero__section_input1,.hero__section_input2{
+padding: 5px 10px 8px;
+font-size: 16px;
+padding: 0px 10px 5px 10px;
+margin-top: auto;
+align-items: center;
+justify-content: center;
+background-color: white;
+width: 250px;
+margin-left: 10px;
+
+border: none;
+}
+
+.hero__section_input1{
+margin-left: auto;
+    width: 40%;
+    border-right: 2px solid lightgray;
+}
+.hero__section_input2{
+width: 51%;
+margin-right: auto;
+}
+.fa-location-dot{
+    margin-left: 10px;
+    margin-top: 2.5px;
+    margin-bottom: auto;
+    font-size: 20px;
+}
+.fa-house{
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-bottom: auto;
+    font-size: 20px;
+}
+
 @media screen and (max-width:600px){
-    .navbar__menu_container .link{
+    .navbar__menu_container .user__icon{
+        display: flex;
+    }
+    .link{
         display: none;
     }
     .hero__section{
         min-height: 500px;
+        min-width: 600px;
+    }
+    .hero__section_headline{
+        font-size: 20px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto; 
+        padding-top: 5px;
+    }
+    .hero__section_input_container{
+        width: 73%;
+        flex-direction: column;
+        padding: 10px 0px 10px 0px;
+        height: auto;
+    }
+    .hero__section_input1,.hero__section_input2{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-right: none;
+        border-radius: 10px;
+        padding-top: auto;
+        padding-bottom: 5px;
+        margin-top: 10px;
     }
 }
-h3{
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-font-style: italic;
+/* will add remaining media queries */
+.info__section{
+  margin: 1rem auto;
+  width: 90%;
+  gap: 15px;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.info__section_card{
+    border-radius:5px;
+    background-color: #f8f8f8;
+overflow: hidden;
+border: 0.5px solid lightgrey;
+object-fit: contain;
+transition: all 0.3s ease-in-out;
+cursor: pointer;
+}
+.info__section_card:hover{
+    box-shadow: 0px 0px 15px lightgray;
+    transform: scale(1.05);
+}
+.info__section_image{
+    height: 100px;
+    width: 170px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+ .info__section_headline{
+    font-size: 18px;
+    font-weight: 500;
+ }
+ .info__section_para{
+    font-size: 12.5px;
+    font-weight: 400;
+    padding: auto;
 }
