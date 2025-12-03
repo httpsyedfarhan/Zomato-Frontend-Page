@@ -139,6 +139,41 @@ margin-right: auto;
         margin-top: 10px;
     }
 }
+@media screen and (max-width:300px){
+    .navbar__menu_container .user__icon{
+        display: flex;
+    }
+    .link{
+        display: none;
+    }
+    .hero__section{
+        min-height: 500px;
+        min-width: 600px;
+    }
+    .hero__section_headline{
+        font-size: 20px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto; 
+        padding-top: 5px;
+    }
+    .hero__section_input_container{
+        width: 73%;
+        flex-direction: column;
+        padding: 10px 0px 10px 0px;
+        height: auto;
+    }
+    .hero__section_input1,.hero__section_input2{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-right: none;
+        border-radius: 10px;
+        padding-top: auto;
+        padding-bottom: 5px;
+        margin-top: 10px;
+    }
+}
 /* will add remaining media queries */
 .info__section{
   margin: 1rem auto;
